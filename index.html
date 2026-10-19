@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#030807">
+  <title>Peteraizer ScamShield Kenya</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="brand">PETERAIZER<span>_SCAMSHIELD</span></div>
+    <select id="language" aria-label="Choose language">
+      <option value="en">English</option>
+      <option value="sw">Kiswahili</option>
+    </select>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="tag">KENYA CYBER SAFETY // V4.0</p>
+      <h1 id="headline">Think before you <span>click_</span></h1>
+      <p id="intro">
+        Inspect suspicious links and messages before sending money
+        or sharing private information.
+      </p>
+
+      <div class="terminal">
+        <div class="terminal-header">
+          <span>root@scamshield:~</span>
+          <span class="live">● LIVE SIMULATION</span>
+        </div>
+        <div id="terminalOutput" aria-live="polite">
+          &gt; Initializing ScamShield...
+        </div>
+        <div class="cursor">█</div>
+        <div class="status">
+          <span>● INTERFACE ACTIVE</span>
+          <span>LOCAL RULE ENGINE</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="grid">
+      <section class="panel">
+        <h2 id="urlTitle">[01] URL THREAT INSPECTOR</h2>
+        <p id="urlDesc">Check a web address for common warning signs.</p>
+        <label for="urlInput">Website address</label>
+        <input id="urlInput" type="text"
+          placeholder="https://example.com" inputmode="url">
+        <button id="checkUrl">CHECK URL</button>
+        <div id="urlResult" class="result" aria-live="polite"></div>
+      </section>
+
+      <section class="panel">
+        <h2 id="messageTitle">[02] MESSAGE SCANNER</h2>
+        <p id="messageDesc">Analyze an SMS or WhatsApp message.</p>
+        <label for="messageInput">Message text</label>
+        <textarea id="messageInput"
+          placeholder="Paste a suspicious message here..."></textarea>
+        <button id="checkMessage">SCAN MESSAGE</button>
+        <div id="messageResult" class="result" aria-live="polite"></div>
+      </section>
+    </div>
+
+    <section>
+      <h2 id="tipsTitle" class="section-title">DEFENSE PROTOCOLS</h2>
+      <div class="tips">
+        <article class="tip">
+          <h3>01 / Protect your PIN</h3>
+          Never share your M-PESA PIN, password or OTP.
+        </article>
+        <article class="tip">
+          <h3>02 / Verify payments</h3>
+          Confirm transactions in your official account.
+        </article>
+        <article class="tip">
+          <h3>03 / Check job offers</h3>
+          Be cautious when a recruiter demands advance fees.
+        </article>
+        <article class="tip">
+          <h3>04 / Inspect links</h3>
+          Check the domain carefully before opening a link.
+        </article>
+      </div>
+    </section>
+
+    <section class="notice">
+      <h2>System limitations</h2>
+      <p>
+        This version uses local detection rules, not live threat
+        intelligence or a connected AI service. A low-warning result
+        does not guarantee that a link or message is safe.
+      </p>
+      <p>
+        Text is analyzed in your browser. Do not enter real passwords,
+        PINs or verification codes.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="year"></span> PETERAIZER SCAMSHIELD KENYA
+    <p>DEFEND · DETECT · VERIFY</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
